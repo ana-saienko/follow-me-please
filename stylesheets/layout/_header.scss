@@ -1,0 +1,93 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+// POSITION
+// -----------------------------------------------------------------------------
+
+.header {
+  padding: 25px 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header__contact {
+  display: inline-flex;
+  align-items: center;
+}
+
+// SVG
+// -----------------------------------------------------------------------------
+
+.header__svg {
+  margin-right: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px;
+  background: linear-gradient(287.74deg, #f58656 8.52%, #fe5626 92.72%);
+  box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+  border-radius: 50%;
+}
+
+.header__icon {
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+}
+
+// TYPO
+// -----------------------------------------------------------------------------
+
+.header__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-black;
+}
+
+.header__time {
+  position: relative;
+  padding-left: 13px;
+  margin-right: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-black;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: green;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+	 transform: translateY(-50%);
+  }
+}
+
+.header__phone {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: $text-black;
+}
