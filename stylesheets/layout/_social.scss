@@ -1,0 +1,38 @@
+.social {
+	padding: 40px 0;
+
+	background-image: url(../../images/photo.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.social__box {
+  padding: 20px;
+  margin: 0 auto;
+  background: linear-gradient(45.04deg, #fd9924 -51.05%, #f65b16 134.89%);
+  box-shadow: 0px 70px 90px rgba(253, 55, 36, 0.2),
+    0px 35px 50px rgba(253, 55, 36, 0.2), 0px 20px 25px rgba(253, 55, 36, 0.2);
+  border-radius: 15px;
+
+  max-width: 480px;
+  min-height: 180px;
+}
+
+.social__instagram {
+  padding: 55px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #ffffff;
+
+  //   opacity: 0.1;
+  border: 2px solid #f97a31;
+  border-radius: 15px;
+
+  span {
+    font-weight: 700;
+  }
+}

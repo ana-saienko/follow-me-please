@@ -171,6 +171,9 @@ body {
 
 .header {
   padding: 25px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .header__container {
@@ -270,12 +273,58 @@ body {
   color: #000000;
 }
 
+.hero {
+  min-height: 100vh;
+  padding-top: 197px;
+  background-color: #F0F5FB;
+}
+
+.hero__title {
+  margin-bottom: 18px;
+}
+
 .hero__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
   text-align: center;
+  margin: 0 auto;
   color: #000000;
+  max-width: 625px;
+}
+
+.social {
+  padding: 40px 0;
+  background-image: url(../../images/photo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social__box {
+  padding: 20px;
+  margin: 0 auto;
+  background: linear-gradient(45.04deg, #fd9924 -51.05%, #f65b16 134.89%);
+  -webkit-box-shadow: 0px 70px 90px rgba(253, 55, 36, 0.2), 0px 35px 50px rgba(253, 55, 36, 0.2), 0px 20px 25px rgba(253, 55, 36, 0.2);
+          box-shadow: 0px 70px 90px rgba(253, 55, 36, 0.2), 0px 35px 50px rgba(253, 55, 36, 0.2), 0px 20px 25px rgba(253, 55, 36, 0.2);
+  border-radius: 15px;
+  max-width: 480px;
+  min-height: 180px;
+}
+
+.social__instagram {
+  padding: 55px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+  border: 2px solid #f97a31;
+  border-radius: 15px;
+}
+
+.social__instagram span {
+  font-weight: 700;
 }
 
 .footer {
