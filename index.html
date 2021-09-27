@@ -62,6 +62,50 @@
           </div>
         </section>
 
+        <section class="popular-dishes">
+          <div class="container">
+            <h3 class="popular-dishes__title title">Popular dishes</h3>
+            <div class="popular-dishes__tabs">
+              <ul class="popular-dishes__list">
+                <li class="popular-dishes__item popular-dishes__item_active">
+                  Pizza
+                </li>
+                <li class="popular-dishes__item">Sushi</li>
+                <li class="popular-dishes__item">Salad</li>
+                <li class="popular-dishes__item">Dessert</li>
+                <li class="popular-dishes__item">Drinks</li>
+              </ul>
+            </div>
+
+            <div class="popular-dishes__grid">
+              <div class="popular-dishes__grid-item grid-item">
+                <div class="grid-item__img">
+                  <img src="images/grid-items/01.png" alt="" />
+                </div>
+                <div class="grid-item__top">
+                  Quattro formaggi
+                  <span>32cm</span>
+                </div>
+                <div class="grid-item__content">
+                  Dough, Mozzarella, Cheddar, Blue, Parmesan
+                </div>
+                <div class="grid-item__price">119 UAH</div>
+                <div class="grid-item__bag">
+                  <svg class="grid-item__icon">
+                    <use xlink:href="sprite.svg#shop-bag"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="popular-dishes__btn">
+              <svg class="popular-dishes__icon">
+                <use xlink:href="sprite.svg#all-arrows"></use>
+              </svg>
+            </a>
+          </div>
+        </section>
+
         <section class="social">
           <div class="social__box">
             <div class="social__instagram">
@@ -72,12 +116,21 @@
 
         <section class="contact-me">
           <h3 class="contact-me__title title">
-            Fill out the form <br> and we will call you
+            Fill out the form <br />
+            and we will call you
           </h3>
           <form class="contact-me__form">
             <div class="contact-me__box">
-              <input type="text" class="contact-me__input" placeholder="Your Name"/>
-              <input type="phone" class="contact-me__input" placeholder="Phone Number"/>
+              <input
+                type="text"
+                class="contact-me__input"
+                placeholder="Your Name"
+              />
+              <input
+                type="phone"
+                class="contact-me__input"
+                placeholder="Phone Number"
+              />
               <button class="contact-me__button" type="submit">
                 Сall back
                 <span class="contact-me__svg"

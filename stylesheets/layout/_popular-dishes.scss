@@ -1,0 +1,191 @@
+.popular-dishes {
+  padding-top: 140px;
+
+  text-align: center;
+}
+
+.popular-dishes__title {
+  margin-bottom: 49px;
+}
+
+.popular-dishes__tabs {
+  margin-bottom: 50px;
+}
+
+.popular-dishes__list {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 31px;
+}
+
+.popular-dishes__item {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  padding: 16px 45px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #151515;
+
+  background: linear-gradient(0deg, #eceef6, #eceef6), #59aaf1;
+  border-radius: 45px;
+
+  &_active {
+    background: #59aaf1;
+    color: #fff;
+  }
+
+  &:hover {
+    background: #59aaf1;
+    color: #fff;
+  }
+}
+
+// Button
+// ---------------------------------------------------------------------------
+
+.popular-dishes__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(287.74deg, #f58656 8.52%, #fe5626 92.72%);
+  box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+  border-radius: 50%;
+
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+
+  &:hover {
+    background: #fff;
+    color: #f54514;
+    box-shadow: none;
+    border: 1px solid #f54514;
+
+    .popular-dishes__icon {
+      fill: #f54514;
+    }
+  }
+}
+.popular-dishes__icon {
+  width: 25px;
+  height: 25px;
+  fill: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+// GRID
+// ---------------------------------------------------------------------------
+
+.popular-dishes__grid {
+  margin-bottom: 66px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 21px 40px;
+  grid-template-areas:
+    ". . . ."
+    ". . . .";
+}
+
+.grid-item {
+  padding: 36px 25px 0px;
+  text-align: center;
+
+  //   border: 2px solid #eceef7;
+  //   border-radius: 15px;
+
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background-image: url(../../images/grid-items/before.png);
+    width: 260px;
+    height: 415px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    z-index: -1;
+    left: 0;
+    top: 0;
+  }
+}
+
+.grid-item__img {
+  overflow: hidden;
+  max-width: 170px;
+  height: 173px;
+  margin: 0 auto;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+}
+
+.grid-item__top {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: $text-black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: $text-black;
+
+    display: inline-block;
+  }
+}
+
+.grid-item__content {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: $text-black;
+  text-align: left;
+  margin-bottom: 19px;
+}
+
+.grid-item__price {
+  margin-bottom: 19px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #121146;
+}
+
+// SVG
+// --------------------------------------------------------
+
+.grid-item__bag {
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #eceef6;
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-item__icon {
+  height: 14px;
+  width: 12px;
+  fill: #fb6838;
+}
