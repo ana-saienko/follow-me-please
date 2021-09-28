@@ -130,7 +130,6 @@
       ". .";
   }
 
-
   @media (max-width: $md4+px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -158,7 +157,7 @@
   &:before {
     position: absolute;
     content: "";
-    background-image: url(../../images/grid-items/before.png);
+    background-image: url(../images/grid-items/before.png);
     width: 260px;
     height: 415px;
     background-repeat: no-repeat;
@@ -179,9 +178,8 @@
     }
   }
 
-  
-  @media (max-width:$md3+px){
-    padding: 25px 15px 30px; 
+  @media (max-width: $md3+px) {
+    padding: 25px 15px 30px;
   }
 }
 
@@ -223,8 +221,8 @@
     display: inline-block;
   }
 
-  @media (max-width:$md3+px){
-     font-size: 14px; 
+  @media (max-width: $md3+px) {
+    font-size: 14px;
   }
 }
 
@@ -245,7 +243,7 @@
   text-align: center;
   color: #121146;
 
-  @media (max-width:$md3+px){
+  @media (max-width: $md3+px) {
     font-size: 18px;
   }
 }
@@ -267,8 +265,8 @@
   align-items: center;
   justify-content: center;
 
-  @media (max-width:$md1+px){
-    bottom: 10px; 
+  @media (max-width: $md1+px) {
+    bottom: 10px;
   }
 }
 .grid-item__icon {

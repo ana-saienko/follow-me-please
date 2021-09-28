@@ -452,6 +452,8 @@ body {
 }
 
 .contact-me__form {
+  position: relative;
+  z-index: 10;
   max-width: 860px;
   margin: 0 auto;
 }
@@ -761,7 +763,7 @@ body {
 .grid-item:before {
   position: absolute;
   content: "";
-  background-image: url(../../images/grid-items/before.png);
+  background-image: url(../images/grid-items/before.png);
   width: 260px;
   height: 415px;
   background-repeat: no-repeat;
