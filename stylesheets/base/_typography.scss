@@ -15,4 +15,13 @@ body {
   line-height: 59px;
   text-align: center;
   color: $text-black;
+
+  @media (max-width:$md3+px){
+     font-size: 40px; 
+  }
+
+  @media (max-width:$md4+px){
+     font-size: 30px;
+     line-height: 35px; 
+  }
 }

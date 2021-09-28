@@ -1,0 +1,58 @@
+.bag {
+//   display: flex;
+width: 200px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+cursor: pointer;
+}
+
+.bag__amount {
+  //   padding: 10px 15px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 110px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  background-color: #3f3f3f;
+}
+
+.bag__svg {
+  width: 25px;
+  height: 25px;
+  fill: #f58656;
+}
+
+.bag__icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px #3f3f3f;
+}
+
+.bag__quantity {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+
+  background-color: #fe3326;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 50%;
+  bottom: -10px;
+  right: -10px;
+}

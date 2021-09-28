@@ -2,6 +2,25 @@
   padding-top: 140px;
 
   text-align: center;
+  position: relative;
+}
+
+.popular-dishes__bag {
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  right: 15%;
+  top: 5%;
+
+  @media (max-width: $md2+px) {
+    right: 0%;
+  }
+
+  @media (max-width: $md3+px) {
+    top: 1%;
+  }
 }
 
 .popular-dishes__title {
@@ -18,6 +37,11 @@
   justify-content: center;
 
   gap: 31px;
+
+  @media (max-width: $md2+px) {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
 }
 
 .popular-dishes__item {
@@ -41,6 +65,11 @@
   &:hover {
     background: #59aaf1;
     color: #fff;
+  }
+
+  @media (max-width: $md2+px) {
+    padding: 10px 40px;
+    font-size: 14px;
   }
 }
 
@@ -82,18 +111,43 @@
 // ---------------------------------------------------------------------------
 
 .popular-dishes__grid {
-  margin-bottom: 66px;
+  margin-bottom: 96px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 21px 40px;
+  gap: 70px 40px;
   grid-template-areas:
     ". . . ."
     ". . . .";
+
+  @media (max-width: $md1+px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". ."
+      ". .";
+  }
+
+
+  @media (max-width: $md4+px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      ".";
+  }
 }
 
 .grid-item {
-  padding: 36px 25px 0px;
+  padding: 36px 20px 0px;
   text-align: center;
 
   //   border: 2px solid #eceef7;
@@ -114,18 +168,38 @@
     left: 0;
     top: 0;
   }
+
+  @media (max-width: $md1+px) {
+    padding: 36px 20px 30px;
+    border: 2px solid #eceef7;
+    border-radius: 15px;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  
+  @media (max-width:$md3+px){
+    padding: 25px 15px 30px; 
+  }
 }
 
 .grid-item__img {
+  position: relative;
   overflow: hidden;
   max-width: 170px;
   height: 173px;
   margin: 0 auto;
+  margin-bottom: 30px;
 
   img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
 
@@ -140,12 +214,17 @@
   align-items: center;
 
   span {
+    padding-left: 5px;
     font-weight: 400;
     font-size: 12px;
     line-height: 140%;
     color: $text-black;
 
     display: inline-block;
+  }
+
+  @media (max-width:$md3+px){
+     font-size: 14px; 
   }
 }
 
@@ -165,6 +244,10 @@
   line-height: 140%;
   text-align: center;
   color: #121146;
+
+  @media (max-width:$md3+px){
+    font-size: 18px;
+  }
 }
 
 // SVG
@@ -172,7 +255,7 @@
 
 .grid-item__bag {
   position: absolute;
-  bottom: -55px;
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
   border: 2px solid #eceef6;
@@ -183,6 +266,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width:$md1+px){
+    bottom: 10px; 
+  }
 }
 .grid-item__icon {
   height: 14px;

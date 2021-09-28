@@ -1,7 +1,13 @@
 .hero {
   min-height: 100vh;
   padding-top: 197px;
-  background-color: #F0F5FB;
+  background-color: #f0f5fb;
+
+  position: relative;
+
+  @media (max-width:$md2+px){
+    padding-top: 300px;
+  }
 }
 
 .hero__title {
@@ -17,4 +23,23 @@
   color: $text-black;
 
   max-width: 625px;
+
+  @media (max-width:$md3+px){
+     font-size: 14px; 
+  }
 }
+
+// PARALLAX
+// --------------------------
+
+
+
+.parallax {
+  position: absolute;
+  min-height: 100vh;
+}
+
+.parallax-img {
+  position: absolute;
+}
+
