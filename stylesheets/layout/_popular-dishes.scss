@@ -202,6 +202,7 @@
 }
 
 .grid-item__top {
+  text-align: left;
   margin-bottom: 8px;
   font-weight: 600;
   font-size: 16px;
@@ -210,6 +211,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  max-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   span {
     padding-left: 5px;
@@ -233,6 +238,10 @@
   color: $text-black;
   text-align: left;
   margin-bottom: 19px;
+
+  max-height: 34px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .grid-item__price {
@@ -243,6 +252,10 @@
   text-align: center;
   color: #121146;
 
+  max-height: 33px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
   @media (max-width: $md3+px) {
     font-size: 18px;
   }
@@ -252,10 +265,11 @@
 // --------------------------------------------------------
 
 .grid-item__bag {
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
+  // position: absolute;
+  // bottom: -30px;
+  // left: 50%;
+  // transform: translateX(-50%);
   border: 2px solid #eceef6;
   border-radius: 50%;
   width: 33px;
