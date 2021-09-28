@@ -3,7 +3,13 @@
 // -----------------------------------------------------------------------------
 
 .footer {
-  
+  position: relative;
+}
+
+.footer__parallax {
+  position: absolute;
+  bottom: 70px;
+  right: calc(50% - 720px) ;
 }
 
 .footer__container {

@@ -10,6 +10,12 @@
   }
 }
 
+.parallax {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 720px);
+}
+
 .hero__title {
   margin-bottom: 18px;
 }
@@ -32,14 +38,4 @@
 // PARALLAX
 // --------------------------
 
-
-
-.parallax {
-  position: absolute;
-  min-height: 100vh;
-}
-
-.parallax-img {
-  position: absolute;
-}
 

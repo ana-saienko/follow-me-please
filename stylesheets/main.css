@@ -351,6 +351,12 @@ body {
   }
 }
 
+.parallax {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 720px);
+}
+
 .hero__title {
   margin-bottom: 18px;
 }
@@ -369,15 +375,6 @@ body {
   .hero__text {
     font-size: 14px;
   }
-}
-
-.parallax {
-  position: absolute;
-  min-height: 100vh;
-}
-
-.parallax-img {
-  position: absolute;
 }
 
 .social {
@@ -898,6 +895,16 @@ body {
   height: 14px;
   width: 12px;
   fill: #fb6838;
+}
+
+.footer {
+  position: relative;
+}
+
+.footer__parallax {
+  position: absolute;
+  bottom: 70px;
+  right: calc(50% - 720px);
 }
 
 .footer__container {
