@@ -1,14 +1,20 @@
-var image = document.getElementsByClassName('footer__parallax-img');
-new simpleParallax(image, {
-	scale: 1.1,	
-	delay: .6,
-	transition: 'cubic-bezier(0,0,0,1)',
-	orientation: 'down'
-});
+// TABS
+// Get the container element
+var btnContainer = document.getElementById("pop-dishes-tab");
 
-var image = document.getElementsByClassName('parallax-img');
-new simpleParallax(image, {
-	scale: 1.1,	
-	delay: .6,
-	transition: 'cubic-bezier(0,0,0,1)'
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("popular-dishes__item");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("popular-dishes__item_active");
+    current[0].className = current[0].className.replace(" popular-dishes__item_active", "");
+    this.className += " popular-dishes__item_active";
+  });
+}
+
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene, {
+	
 });

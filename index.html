@@ -78,7 +78,7 @@
             </div>
             <h3 class="popular-dishes__title title">Popular dishes</h3>
             <div class="popular-dishes__tabs">
-              <ul class="popular-dishes__list">
+              <ul class="popular-dishes__list" id="pop-dishes-tab">
                 <li class="popular-dishes__item popular-dishes__item_active">
                   Pizza
                 </li>
@@ -270,12 +270,12 @@
               <input
                 type="text"
                 class="contact-me__input"
-                placeholder="Your Name"
+                placeholder="Your Name" required
               />
               <input
                 type="phone"
                 class="contact-me__input"
-                placeholder="Phone Number"
+                placeholder="Phone Number" required
               />
               <button class="contact-me__button" type="submit">
                 Сall back
@@ -298,13 +298,47 @@
           <span class="footer__author">Made with delight by harmuder </span>
         </div>
 
-        <div class="footer__parallax">
-          <img class="footer__parallax-img" src="images/parallax-header/footer-gr.png" alt="">
+        <div id="scene" class="footer-parallax">
+          <div data-depth="0.2" class="layer">
+            <img src="images/parallax-footer/group-left.png" alt="">
+          </div>
+          <div data-depth="0.7" class="footer-parallax__2">
+            <img src="images/parallax-footer/group-right.png" alt="">
+          </div>
+          <div data-depth="0.8" class="footer-parallax__3">
+            <img src="images/parallax-footer/mushrum.png" alt="">
+          </div>
+          <div data-depth="0.3" class="footer-parallax__4">
+            <img src="images/parallax-footer/part-tomato.png" alt="">
+          </div>
+          <div data-depth="0.2" class="footer-parallax__5">
+            <img src="images/parallax-footer/pep.png" alt="">
+          </div>
+          <div data-depth="0.5" class="footer-parallax__6">
+            <img src="images/parallax-footer/pepper-1.png" alt="">
+          </div>
+          <div data-depth="0.8" class="footer-parallax__7">
+            <img src="images/parallax-footer/pepper-2.png" alt="">
+          </div>
+          <div data-depth="0.3" class="footer-parallax__8">
+            <img src="images/parallax-footer/pepper.png" alt="">
+          </div>
+          <div data-depth="0.7" class="footer-parallax__9">
+            <img src="images/parallax-footer/svg.png" alt="">
+          </div>
+          <div data-depth="0.2" class="footer-parallax__10">
+            <img src="images/parallax-footer/tomato.png" alt="">
+          </div>
+          <div data-depth="0.9" class="footer-parallax__11">
+            <img src="images/parallax-footer/car.png" alt="">
+          </div>
         </div>
+
       </footer>
     </div>
 
-    <script src="js/simpleParallax.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
