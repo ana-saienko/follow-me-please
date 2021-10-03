@@ -757,21 +757,22 @@ body {
 .grid-item {
   padding: 36px 20px 0px;
   text-align: center;
+  border: 2px solid #eceef7;
+  border-bottom: 1px solid transparent;
+  border-radius: 15px;
   position: relative;
 }
 
-.grid-item:before {
+.grid-item:after {
   position: absolute;
   content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 14%;
   background-image: url(../images/grid-items/before.png);
-  width: 260px;
-  height: 415px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
-  z-index: -1;
-  left: 0;
-  top: 0;
 }
 
 @media (max-width: 1172px) {
@@ -877,20 +878,13 @@ body {
 }
 
 .grid-item__bag {
+  position: relative;
+  z-index: 1;
   margin: 0 auto;
   border: 2px solid #eceef6;
   border-radius: 50%;
   width: 33px;
   height: 33px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media (max-width: 1172px) {
@@ -903,6 +897,9 @@ body {
   height: 14px;
   width: 12px;
   fill: #fb6838;
+  position: absolute;
+  top: 7px;
+  left: 9px;
 }
 
 .footer {
