@@ -14,7 +14,28 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// Two Parallaxes
+
 var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene, {
 	
 });
+
+var scene2 = document.getElementById('scene-2');
+var parallaxInstance = new Parallax(scene2, {
+	
+});
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// Clamp js (to cut the long string)
+
+var gridTitle = document.getElementById('grid-title');
+
+$clamp(gridTitle, {clamp: 1});

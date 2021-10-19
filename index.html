@@ -53,10 +53,46 @@
 
       <main class="page">
         <section class="hero">
-          <div class="parallax">
-            <img class="parallax-img" src="images/parallax-header/gr.png" alt="">
+
+          <div id="scene-2" class="header-parallax">
+            <div data-depth="0.2" class="layer">
+              <img src="images/par-header/tomato.png" alt="">
+            </div>
+            <div data-depth="0.7" class="header-parallax__2">
+              <img src="images/par-header/tomato-2.png" alt="">
+            </div>
+            <div data-depth="0.8" class="header-parallax__3">
+              <img src="images/par-header/mush-1.png" alt="">
+            </div>
+            <div data-depth="0.3" class="header-parallax__4">
+              <img src="images/par-header/mush-2.png" alt="">
+            </div>
+            <div data-depth="0.2" class="header-parallax__5">
+              <img src="images/par-header/pepper.png" alt="">
+            </div>
+            <div data-depth="0.5" class="header-parallax__6">
+              <img src="images/par-header/main-pizza.png" alt="">
+            </div>
+            <div data-depth="0.8" class="header-parallax__7">
+              <img src="images/par-header/crevette.png" alt="">
+            </div>
+            <div data-depth="0.3" class="header-parallax__8">
+              <img src="images/par-header/gurke.png" alt="">
+            </div>
+            <div data-depth="0.7" class="header-parallax__9">
+              <img src="images/par-header/pep.png" alt="">
+            </div>
+            <div data-depth="0.2" class="header-parallax__10">
+              <img src="images/par-header/pep-2.png" alt="">
+            </div>
+            <div data-depth="0.9" class="header-parallax__11">
+              <img src="images/par-header/pep-3.png" alt="">
+            </div>
+            <div data-depth="0.9" class="header-parallax__12">
+              <img src="images/par-header/pizza-slice.png" alt="">
+            </div>
           </div>
-          <div class="container">
+          <div class="container hero__container">
             <h1 class="hero__title title">Food delivery in Kovel</h1>
             <p class="hero__text">
               If you decide to relax or have unexpected guests, call us. We make
@@ -95,8 +131,27 @@
                   <img src="images/grid-items/01.png" alt="" />
                 </div>
                 <div class="grid-item__top">
-                  Quattro formaggi
-                  <span>32cm</span>
+                  <span class="grid-item__title" id="grid-title">Кватро формаджіо Кватро формаджіо Кватро формаджіо Кватро формаджіо</span>
+                  <span class="grid-item__size">32cm</span>
+                </div>
+                <div class="grid-item__content">
+                  Dough, Mozzarella, Cheddar, Blue, Parmesan Dough, Mozzarella, Cheddar, Blue, Parmesan Dough, Mozzarella, Cheddar, Blue, Parmesan
+                </div>
+                <div class="grid-item__price">119 UAH</div>
+                <div class="grid-item__bag">
+                  <svg class="grid-item__icon">
+                    <use xlink:href="sprite.svg#shop-bag"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="popular-dishes__grid-item grid-item">
+                <div class="grid-item__img">
+                  <img src="images/grid-items/01.png" alt="" />
+                </div>
+                <div class="grid-item__top">
+                  <span class="grid-item__title">Кватро формаджіо</span>
+                  <span class="grid-item__size">32cm</span>
                 </div>
                 <div class="grid-item__content">
                   Dough, Mozzarella, Cheddar, Blue, Parmesan
@@ -114,27 +169,8 @@
                   <img src="images/grid-items/01.png" alt="" />
                 </div>
                 <div class="grid-item__top">
-                  Карбонара
-                  <span>32cm</span>
-                </div>
-                <div class="grid-item__content">
-                  Dough, Mozzarella, Cheddar, Blue, Parmesan
-                </div>
-                <div class="grid-item__price">119 UAH</div>
-                <div class="grid-item__bag">
-                  <svg class="grid-item__icon">
-                    <use xlink:href="sprite.svg#shop-bag"></use>
-                  </svg>
-                </div>
-              </div>
-
-              <div class="popular-dishes__grid-item grid-item">
-                <div class="grid-item__img">
-                  <img src="images/grid-items/01.png" alt="" />
-                </div>
-                <div class="grid-item__top">
-                  Філадельфія селмон
-                  <span>32cm</span>
+                  <span class="grid-item__title">Кватро формаджіо</span>
+                  <span class="grid-item__size">32cm</span>
                 </div>
                 <div class="grid-item__content">
                   Dough, mozzarella, barrel, eggs, Parmesan cheese
@@ -152,8 +188,8 @@
                   <img src="images/grid-items/01.png" alt="" />
                 </div>
                 <div class="grid-item__top">
-                  Ді маре
-                  <span>32cm</span>
+                  <span class="grid-item__title">Кватро формаджіо</span>
+                  <span class="grid-item__size">32cm</span>
                 </div>
                 <div class="grid-item__content">
                   Dough, Mozzarella, Cheddar, Blue, Parmesan
@@ -171,8 +207,8 @@
                   <img src="images/grid-items/01.png" alt="" />
                 </div>
                 <div class="grid-item__top">
-                  Кватро формаджіо
-                  <span>32cm</span>
+                  <span class="grid-item__title">Кватро формаджіо</span>
+                  <span class="grid-item__size">32cm</span>
                 </div>
                 <div class="grid-item__content">
                   Dough, Mozzarella, Cheddar, Blue, Parmesan
@@ -190,8 +226,8 @@
                   <img src="images/grid-items/01.png" alt="" />
                 </div>
                 <div class="grid-item__top">
-                  Кватро формаджіо
-                  <span>32cm</span>
+                  <span class="grid-item__title">Кватро формаджіо</span>
+                  <span class="grid-item__size">32cm</span>
                 </div>
                 <div class="grid-item__content">
                   Dough, Mozzarella, Cheddar, Blue, Parmesan
@@ -209,8 +245,8 @@
                   <img src="images/grid-items/01.png" alt="" />
                 </div>
                 <div class="grid-item__top">
-                  Quattro formaggi
-                  <span>32cm</span>
+                  <span class="grid-item__title">Кватро формаджіо</span>
+                  <span class="grid-item__size">32cm</span>
                 </div>
                 <div class="grid-item__content">
                   Dough, Mozzarella, Cheddar, Blue, Parmesan
@@ -228,8 +264,8 @@
                   <img src="images/grid-items/01.png" alt="" />
                 </div>
                 <div class="grid-item__top">
-                  Quattro formaggi
-                  <span>32cm</span>
+                  <span class="grid-item__title">Кватро формаджіо</span>
+                  <span class="grid-item__size">32cm</span>
                 </div>
                 <div class="grid-item__content">
                   Dough, Mozzarella, Cheddar, Blue, Parmesan
@@ -286,7 +322,46 @@
               </button>
             </div>
           </form>
+
+          <div id="scene" class="footer-parallax">
+            <div data-depth="0.2" class="layer">
+              <img src="images/parallax-footer/group-left.png" alt="">
+            </div>
+            <div data-depth="0.7" class="footer-parallax__2">
+              <img src="images/parallax-footer/group-right.png" alt="">
+            </div>
+            <div data-depth="0.8" class="footer-parallax__3">
+              <img src="images/parallax-footer/mushrum.png" alt="">
+            </div>
+            <div data-depth="0.3" class="footer-parallax__4">
+              <img src="images/parallax-footer/part-tomato.png" alt="">
+            </div>
+            <div data-depth="0.2" class="footer-parallax__5">
+              <img src="images/parallax-footer/pep.png" alt="">
+            </div>
+            <div data-depth="0.5" class="footer-parallax__6">
+              <img src="images/parallax-footer/pepper-1.png" alt="">
+            </div>
+            <div data-depth="0.8" class="footer-parallax__7">
+              <img src="images/parallax-footer/pepper-2.png" alt="">
+            </div>
+            <div data-depth="0.3" class="footer-parallax__8">
+              <img src="images/parallax-footer/pepper.png" alt="">
+            </div>
+            <div data-depth="0.7" class="footer-parallax__9">
+              <img src="images/parallax-footer/svg.png" alt="">
+            </div>
+            <div data-depth="0.2" class="footer-parallax__10">
+              <img src="images/parallax-footer/tomato.png" alt="">
+            </div>
+            <div data-depth="0.9" class="footer-parallax__11">
+              <img src="images/parallax-footer/car.png" alt="">
+            </div>
+          </div>
         </section>
+
+
+
       </main>
 
       <footer class="footer">
@@ -298,47 +373,12 @@
           <span class="footer__author">Made with delight by harmuder </span>
         </div>
 
-        <div id="scene" class="footer-parallax">
-          <div data-depth="0.2" class="layer">
-            <img src="images/parallax-footer/group-left.png" alt="">
-          </div>
-          <div data-depth="0.7" class="footer-parallax__2">
-            <img src="images/parallax-footer/group-right.png" alt="">
-          </div>
-          <div data-depth="0.8" class="footer-parallax__3">
-            <img src="images/parallax-footer/mushrum.png" alt="">
-          </div>
-          <div data-depth="0.3" class="footer-parallax__4">
-            <img src="images/parallax-footer/part-tomato.png" alt="">
-          </div>
-          <div data-depth="0.2" class="footer-parallax__5">
-            <img src="images/parallax-footer/pep.png" alt="">
-          </div>
-          <div data-depth="0.5" class="footer-parallax__6">
-            <img src="images/parallax-footer/pepper-1.png" alt="">
-          </div>
-          <div data-depth="0.8" class="footer-parallax__7">
-            <img src="images/parallax-footer/pepper-2.png" alt="">
-          </div>
-          <div data-depth="0.3" class="footer-parallax__8">
-            <img src="images/parallax-footer/pepper.png" alt="">
-          </div>
-          <div data-depth="0.7" class="footer-parallax__9">
-            <img src="images/parallax-footer/svg.png" alt="">
-          </div>
-          <div data-depth="0.2" class="footer-parallax__10">
-            <img src="images/parallax-footer/tomato.png" alt="">
-          </div>
-          <div data-depth="0.9" class="footer-parallax__11">
-            <img src="images/parallax-footer/car.png" alt="">
-          </div>
-        </div>
-
       </footer>
     </div>
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/clamp.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

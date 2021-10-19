@@ -1,0 +1,119 @@
+.header-parallax {
+  position: absolute;
+  left: 32%;
+
+  @media (max-width: $md3+px) {
+    bottom: 35%;
+    left: 0%;
+  }
+
+  @media (max-width:$md4+px){
+	left: -25%;
+  }
+}
+
+.layer {
+  left: -140% !important;
+}
+
+.header-parallax__2 {
+  position: absolute;
+  left: -70% !important;
+  bottom: 0;
+}
+
+.header-parallax__3 {
+  position: absolute;
+  left: -50% !important;
+  top: 115% !important;
+}
+
+.header-parallax__4 {
+  position: absolute;
+  left: -20% !important;
+  top: 115% !important;
+  img {
+    position: absolute;
+    bottom: 45px;
+  }
+}
+
+.header-parallax__5 {
+  position: absolute;
+  left: -25% !important;
+  top: 130% !important;
+
+  img {
+    position: absolute;
+    bottom: 185px;
+  }
+}
+
+.header-parallax__6 {
+  position: absolute;
+  left: 15% !important;
+  top: 205% !important;
+  img {
+    position: absolute;
+    bottom: 45px;
+  }
+}
+
+.header-parallax__7 {
+  position: absolute;
+  left: 250% !important;
+  img {
+    position: absolute;
+    bottom: 45px;
+  }
+}
+
+.header-parallax__8 {
+  position: absolute;
+  left: 250% !important;
+  top: 100% !important;
+  img {
+    position: absolute;
+    bottom: 45px;
+  }
+}
+
+.header-parallax__9 {
+  position: absolute;
+  left: 190% !important;
+  top: 105% !important;
+  img {
+    position: absolute;
+    bottom: 45px;
+  }
+}
+
+.header-parallax__10 {
+  position: absolute;
+  left: 220% !important;
+  top: 115% !important;
+  img {
+    position: absolute;
+    bottom: 45px;
+  }
+}
+
+.header-parallax__11 {
+  position: absolute;
+  left: 210% !important;
+  top: 135% !important;
+  img {
+    position: absolute;
+    bottom: 45px;
+  }
+}
+
+.header-parallax__12 {
+  position: absolute;
+  left: 250% !important;
+  top: 135% !important;
+  img {
+    position: absolute;
+    bottom: 45px;
+  }
+}
