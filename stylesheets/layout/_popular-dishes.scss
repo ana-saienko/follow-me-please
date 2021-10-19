@@ -149,9 +149,9 @@
   padding: 36px 20px 0px;
   text-align: center;
 
-  //   border: 2px solid #eceef7;
-  //   border-radius: 15px;
-
+  border: 2px solid #eceef7;
+  border-bottom: 1px solid transparent;
+  border-radius: 15px;
   position: relative;
 
   border: 2px solid #eceef7;
@@ -270,6 +270,9 @@
 // --------------------------------------------------------
 
 .grid-item__bag {
+  position: relative;
+  z-index: 1;
+  
   margin: 0 auto;
   position: relative;
   // position: absolute;
@@ -280,7 +283,14 @@
   border-radius: 50%;
   width: 33px;
   height: 33px;
+<<<<<<< HEAD
   margin-bottom: 10px;
+=======
+
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+>>>>>>> 254631b8029935793197cdc8c108b67239a04910
 
   @media (max-width: $md1+px) {
     bottom: 10px;
@@ -294,4 +304,8 @@
   height: 14px;
   width: 12px;
   fill: #fb6838;
+
+  position: absolute;
+    top: 7px;
+    left: 9px;
 }
