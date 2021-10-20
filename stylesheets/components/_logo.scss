@@ -5,3 +5,20 @@
   /* right: 0; */
   transform: translateX(-50%);
 }
+
+.header__logo,
+.footer__logo {
+  width: 112px;
+  height: 67px;
+  img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  @media (max-width:$md3+px){
+    width: 83px;
+    height: 50px; 
+  }
+}

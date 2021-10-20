@@ -33,6 +33,14 @@
     position: absolute;
     bottom: -20px;
   }
+
+  @media (max-width:$md3+px){
+	left: 20% !important;
+  }
+
+  @media (max-width:$md4+px){
+	left: 10% !important;
+  }
 }
 
 .footer-parallax__5 {
