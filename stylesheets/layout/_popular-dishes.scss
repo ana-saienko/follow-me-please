@@ -295,3 +295,20 @@
   width: 12px;
   fill: #fb6838;
 }
+
+// Переполнение
+// ---------------------------------------------------------------------------
+
+.grid-item__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.grid-item__content {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

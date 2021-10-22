@@ -33,9 +33,3 @@ var parallaxInstance = new Parallax(scene2, {
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
-
-// Clamp js (to cut the long string)
-
-var gridTitle = document.getElementById('grid-title');
-
-$clamp(gridTitle, {clamp: 1});
