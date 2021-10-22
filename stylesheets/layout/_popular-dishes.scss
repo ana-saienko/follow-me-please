@@ -153,18 +153,19 @@
   border-radius: 15px;
   align-content: flex-start;
 
-  &:before {
-    position: absolute;
+  &:after {
     content: "";
-    border-bottom: 2px solid #eceef7;
-    border-radius: 15px;
-    border-left: 2px solid #eceef7;
-    width: 70px;
-    height: 70px;
-    transform: rotate(-45deg);
-    z-index: -1;
-    bottom: -10%;
-    left: 36%;
+    bottom: -48px;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-width: 0 2px 2px 0;
+    border-radius: 0 0 15px 0;
+    border-style: solid;
+    border-color: #eceef6;
+    position: absolute;
+    background: white;
+    width: 45px;
+    height: 45px;
   }
 
   @media (max-width: $md1+px) {
@@ -261,6 +262,7 @@
 // --------------------------------------------------------
 
 .grid-item__bag {
+  z-index: 3;
   margin: 0 auto;
   position: relative;
   // position: absolute;
@@ -271,7 +273,7 @@
   border-radius: 50%;
   width: 33px;
   height: 33px;
-  margin-bottom: 10px;
+  margin-bottom: -15px;
 
   @media (max-width: $md1+px) {
     bottom: 10px;
