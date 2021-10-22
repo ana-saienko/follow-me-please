@@ -148,30 +148,24 @@
 .grid-item {
   padding: 36px 20px 0px;
   text-align: center;
-
-  //   border: 2px solid #eceef7;
-  //   border-radius: 15px;
-
   position: relative;
-
   border: 2px solid #eceef7;
   border-radius: 15px;
-
   align-content: flex-start;
 
-  //  &:before {
-  //    position: absolute;
-  //   content: "";
-  //   background-image: url(../images/grid-items/before.png);
-  //   width: 260px;
-  //   height: 415px;
-  //   background-repeat: no-repeat;
-  //   background-position: center center;
-  //   background-size: contain;
-  //    z-index: -1;
-  //    left: 0;
-  //    top: 0;
-  //   }
+  &:before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #eceef7;
+    border-radius: 15px;
+    border-left: 2px solid #eceef7;
+    width: 70px;
+    height: 70px;
+    transform: rotate(-45deg);
+    z-index: -1;
+    bottom: -10%;
+    left: 36%;
+  }
 
   @media (max-width: $md1+px) {
     padding: 36px 20px 30px;
@@ -206,22 +200,19 @@
 
 .grid-item__title {
   text-align: left;
-  
+
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
   color: $text-black;
-
 }
 
-.grid-item__top{
+.grid-item__top {
   margin-bottom: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
-
 
 .grid-item__size {
   padding-left: 5px;

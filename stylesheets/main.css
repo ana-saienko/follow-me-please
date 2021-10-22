@@ -770,6 +770,21 @@ body {
       align-content: flex-start;
 }
 
+.grid-item:before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #eceef7;
+  border-radius: 15px;
+  border-left: 2px solid #eceef7;
+  width: 70px;
+  height: 70px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: -1;
+  bottom: -10%;
+  left: 36%;
+}
+
 @media (max-width: 1172px) {
   .grid-item {
     padding: 36px 20px 30px;
