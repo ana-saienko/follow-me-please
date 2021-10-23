@@ -275,8 +275,8 @@
   height: 33px;
   margin-bottom: -15px;
 
-  @media (max-width: $md1+px) {
-    bottom: 10px;
+  @media (max-width:$md1+px){
+     margin-bottom: -40px; 
   }
 }
 .grid-item__icon {

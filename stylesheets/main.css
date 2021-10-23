@@ -896,7 +896,7 @@ body {
 
 @media (max-width: 1172px) {
   .grid-item__bag {
-    bottom: 10px;
+    margin-bottom: -40px;
   }
 }
 
