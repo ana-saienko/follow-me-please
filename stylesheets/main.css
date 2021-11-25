@@ -737,7 +737,7 @@ body {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   gap: 70px 40px;
-      grid-template-areas: ". . . ." ". . . .";
+      grid-template-areas: ". . . ." ". . . .";
 }
 
 @media (max-width: 1172px) {
@@ -746,7 +746,7 @@ body {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: ". ." ". ." ". ." ". .";
+        grid-template-areas: ". ." ". ." ". ." ". .";
   }
 }
 
@@ -756,7 +756,7 @@ body {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: "." "." "." "." "." "." "." ".";
+        grid-template-areas: "." "." "." "." "." "." "." ".";
   }
 }
 
@@ -892,12 +892,23 @@ body {
   width: 33px;
   height: 33px;
   margin-bottom: -15px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
 }
 
 @media (max-width: 1172px) {
   .grid-item__bag {
     margin-bottom: -40px;
   }
+}
+
+.grid-item__bag:hover {
+  border: 2px solid #c1c3ca;
+}
+
+.grid-item__bag:hover .grid-item__icon {
+  fill: #ec3e05;
 }
 
 .grid-item__icon {
@@ -909,6 +920,8 @@ body {
   height: 14px;
   width: 12px;
   fill: #fb6838;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .grid-item__title {

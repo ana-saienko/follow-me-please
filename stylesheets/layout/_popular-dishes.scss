@@ -274,9 +274,18 @@
   width: 33px;
   height: 33px;
   margin-bottom: -15px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
 
   @media (max-width:$md1+px){
      margin-bottom: -40px; 
+  }
+
+  &:hover {
+    border: 2px solid #c1c3ca;
+    .grid-item__icon {
+      fill: darken(#fb6838, 13);
+    }
   }
 }
 .grid-item__icon {
@@ -287,6 +296,7 @@
   height: 14px;
   width: 12px;
   fill: #fb6838;
+  transition: all .3s ease-in-out;
 }
 
 // Переполнение
